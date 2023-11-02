@@ -1,0 +1,26 @@
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Datos de conexión a PostgreSQL -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/dbcolegio</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">A1B2C3B2A1</property>
+        <mapping resource="CursosDTO.hbm.xml"/>
+        <mapping resource="EstudiantesDTO.hbm.xml"/>
+        <mapping resource="InscripcionesDTO.hbm.xml"/>
+        <mapping resource="UsuariosDTO.hbm.xml"/>
+
+
+        <!-- Configuración de Hibernate -->
+
+        <!-- Otras configuraciones -->
+
+        <!-- Mapeo de entidades -->
+
+
+
+        <!-- Agrega otros mapeos aquí -->
+    </session-factory>
+</hibernate-configuration>
